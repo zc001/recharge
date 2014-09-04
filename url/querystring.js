@@ -65,13 +65,17 @@ console.log('urlObj format : ', url.format(urlObj));
 	http://localhost:8888/hello?data=300&test=400
 */
 
-var str = 'data=300&test=400';
+var str = 'name=byvoid&email=byvoid%40byvoid.com&address=testtest';
 
 console.log('str parse: ', querystring.parse(str));
 /*
-	这是打印结果
-	{ data: '300', test: '400' }
-*/
+	这是打印结果，值得注意的是，默认给我们url Decode了
+{ 
+	name: 'byvoid',
+  	email: 'byvoid@byvoid.com',
+  	address: 'testtest' 
+}
+  */
 
 var json = {
 	name: 'byvoid',
@@ -81,7 +85,7 @@ var json = {
 
 console.log('json stringify: ', querystring.stringify(json));
 /*
-	这是打印结果
+	这是打印结果，值得注意的是，默认给我们url Encode了
 	name=byvoid&email=byvoid%40byvoid.com&address=testtest
 */
 
