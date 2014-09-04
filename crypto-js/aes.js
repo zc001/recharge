@@ -60,16 +60,6 @@ function test_5 () {
 
 // test_5();
 
-function test_6 () {
-	var text = 'hDhid85RVclRIUmM6v2IyAnRfO9GARNN8EAS0unm0hONCfpFmwxAdQRBlegNTLYpJPLdO7KOgdsPc4CCw2FKsPppo5sLzWBJAIbOuF1mRcsoHF43Z904NbhKJcZ0AdjR/Cqr9lZxCuhG+DTI1j2wPm89t6ktJkwDe/BHj09puodVWXRlvJql8ARLgK5DOpqcNNK/hXjWy9jZHnsYqDdem7E8Va4h0s/i6wB0jxzrfj3NFphVC/wnVymqKchKrisA6V1BAzTwPyclTeicb7AY7A==';
-	var key = "xdgvsa3264ndkmdm";
-
-	var a = CryptoJS.AES.decrypt(text, CryptoJS.enc.Utf8.parse(key), {mode: CryptoJS.mode.ECB});
-
-	console.log('a: ', a.toString(CryptoJS.enc.Utf8));
-}
-
-test_6();
 
 
 
